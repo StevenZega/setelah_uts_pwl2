@@ -225,7 +225,7 @@
     {{-- FOOTER --}}
     <footer class="footer-custom" id="footer">
         <p class="mb-0">&copy; {{ date('Y') }} Tech Admin | Built with
-            <i class="fa-solid fa-heart text-danger"></i> By Josevan, Aditya Sutanto, Steven Credentia, Halim Kurniawan
+            <i class="fa-solid fa-heart text-danger"></i> By Steven Credentia Ivanemaga Zega
         </p>
     </footer>
 

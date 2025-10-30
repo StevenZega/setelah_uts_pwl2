@@ -27,3 +27,5 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('categories', App\Http\Controllers\CategoryProductController::class);
     Route::resource('transaksis', App\Http\Controllers\TransaksiPenjualanController::class);
 });
+
+Route::get('/send-email/{to}/{Id}', [\App\Http\Controllers\TransaksiPenjualanController::class, 'sendEmail']);
