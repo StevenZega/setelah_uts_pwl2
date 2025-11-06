@@ -33,6 +33,17 @@ class ProductController extends Controller
         return view('products.index', compact('products'));
     }
 
+    public function lihat()
+    {
+        return Product::all();
+    }
+
+    public function lihat_by_id($id)
+    {
+        $product = Product::find($id);
+        if (!$product) return response()->json(['message' => 'Product not found'], 404);
+        return $product;
+    }
     /**
      * create
      * 
